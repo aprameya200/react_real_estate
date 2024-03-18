@@ -1,0 +1,102 @@
+.homePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+.homePage .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: inherit;
+}
+
+.homePage .textContainer .wrapper {
+  padding-right: 100px;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.homePage .textContainer .wrapper h1 {
+  font-size: 60px;
+}
+
+.homePage .textContainer .wrapper p {
+  font-size: 16px;
+}
+
+.homePage .textContainer .wrapper .searchbar {
+  width: 100%;
+  background-color: #ffca09;
+  height: 50px;
+}
+
+.homePage .textContainer .wrapper .stats-numbers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homePage .textContainer .wrapper .stats-numbers h2 {
+  font-size: 30px;
+}
+
+.homePage .textContainer .wrapper .stats-numbers span {
+  color: #999999;
+}
+
+.homePage .imageContainer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-right: 20px;
+  background-color: #fcf5f3;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homePage .imageContainer img {
+  width: 115%;
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=homePage.css.map */

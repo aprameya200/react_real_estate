@@ -1,0 +1,131 @@
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+}
+
+.searchBar .type {
+  width: 35%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.searchBar .type .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchBar .type button {
+  border-style: solid;
+  border: 0px;
+}
+
+.searchBar .type .buy {
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  border-top-left-radius: 6px;
+  border: 1px solid black;
+  border-bottom: none;
+  color: white;
+}
+
+.searchBar .type .buy.active {
+  background-color: white;
+  color: black;
+}
+
+.searchBar .type .rent {
+  height: 100%;
+  border: 1px solid black;
+  border-bottom: none;
+  width: 50%;
+  background-color: white;
+  border-top-right-radius: 6px;
+}
+
+.searchBar .type .rent.active {
+  background-color: black;
+  color: white;
+}
+
+.searchBar form {
+  border: 1px solid black;
+  border-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar form input {
+  height: 60px;
+  width: 27%;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.searchBar form input:focus {
+  outline: none;
+}
+
+.searchBar form button {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #fece51;
+  border-style: solid;
+  border: 1px solid black;
+  border-top: 0px;
+  border-bottom: 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchBar form button img {
+  height: 30px;
+  width: 30px;
+}
+/*# sourceMappingURL=searchBar.css.map */

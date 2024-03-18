@@ -25,4 +25,8 @@
     max-width: 640px;
   }
 }
+
+.layout .content {
+  height: calc(100vh - 80px);
+}
 /*# sourceMappingURL=layout.css.map */
