@@ -90,6 +90,20 @@
           align-items: center;
 }
 
+@media (max-width: 738px) {
+  .searchBar form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    gap: 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 .searchBar form input {
   height: 60px;
   width: 27%;
@@ -100,6 +114,23 @@
 
 .searchBar form input:focus {
   outline: none;
+}
+
+@media (max-width: 738px) {
+  .searchBar form input {
+    border: 1px solid black;
+    width: 100%;
+  }
+  .searchBar form input:first-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 738px) {
+  .searchBar form .max-price {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .searchBar form button {
@@ -122,6 +153,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 738px) {
+  .searchBar form button {
+    border-top: 0px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 .searchBar form button img {

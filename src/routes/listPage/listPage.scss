@@ -1,0 +1,23 @@
+.list-page{
+    display: flex;
+    flex-direction: row;
+    height: 200vh;
+
+    .list-container{
+        flex: 3;
+        overflow-y: auto;
+
+        .wrapper{
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    
+    .map-container{
+        flex: 2;
+        background-color: #fcf5f3;
+        padding-right: 20px;
+    }
+}

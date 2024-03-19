@@ -4,15 +4,14 @@
 .homePage{
     display: flex;
     flex-direction: row;
-    height: 100vh;    
-
+    height: 100vh;   
 
     .textContainer{
         display: flex;
         justify-content: center;
         align-items: center;
         flex: 3;
-        height: inherit;
+        height: 100%;
 
         //width is auto 100% at first
         .wrapper{
@@ -23,14 +22,39 @@
             align-items: start;
             justify-content: space-between;
             margin-bottom: 50px;
+            gap: 20px;
+
+            @include small{
+                padding: 20px;
+                height: 55%;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 0px;
+            }
                 
             h1{
                 font-size: 60px;
-            
+
+                @include large{
+                    font-size: 50px;
+                }
+
+                @include medium{
+                    font-size: 40px;
+                }
+
+                
+                @include small{
+                    font-size: 30px;
+                }
             }
 
             p{
                 font-size: 16px;
+
+                @include small{
+                    font-size: 14px;
+                }
             }
 
             .searchbar{
@@ -48,13 +72,25 @@
 
                 h2{
                     font-size: 30px;
+
+                    @include small{
+                        text-align: center;
+                        font-size: 25px;
+
+                    }
                 }
         
                 span{
                     color: rgb(153, 153, 153);
                 }
 
+
+                @include small{
+                    display: none;
+                }
             }
+
+        
         }
 
     }
@@ -72,6 +108,10 @@
             width: 115%;
             position: absolute;
             right: 0;
+        }
+
+        @include medium{
+            display: none;
         }
     }
 }

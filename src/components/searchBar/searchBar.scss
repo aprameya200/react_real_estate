@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .searchBar{
 
     display: flex;
@@ -15,7 +17,6 @@
         align-items: center;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
-    
     
         .center{
             display: flex;
@@ -43,6 +44,8 @@
                 background-color: rgb(255, 255, 255);
                 color: rgb(0, 0, 0);
             }
+
+            
         }
     
         .rent{
@@ -68,6 +71,15 @@
         gap: 12px;
         align-items: center;
 
+        @include small{
+            flex-direction: column;
+            border: none;
+            gap: 0px;
+            align-items: start;
+
+        }
+    
+
         input{
             height: 60px;
             width: 27%;
@@ -78,6 +90,27 @@
             &:focus {
                 outline: none;
             }
+
+            @include small{
+                border: 1px solid black;
+
+                width: 100%;
+
+                &:first-child{
+                    border-bottom: none;
+                }
+                
+            }
+
+        }
+
+        .max-price{
+
+            @include small{
+                border-top: none;
+                border-bottom: none;
+            }
+    
         }
 
         button{
@@ -92,6 +125,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include small{
+                border-top: 0px;
+                border: 1px solid black;
+                width: 100%;
+                padding: 10px;
+            }
             
             
             img{

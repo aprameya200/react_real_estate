@@ -8,6 +8,13 @@ function SearchBar() {
 
     const [searchType, toggleType] = useState(true)
 
+    const [query, setQuery] = useState({
+        type: "buy",
+        location: "",
+        minPrice: 0,
+        maxPrice: 0
+    })
+
     const setType = () => {
         console.log("Clicked")
         toggleType(!searchType)
@@ -22,7 +29,7 @@ function SearchBar() {
             <form action="">
                 <input type="text" name="location" placeholder='City Location' />
                 <input type="text" name="minPrice" min={0} max={10000000} placeholder='Min Price' />
-                <input type="text" name="maxPrice" min={0} max={10000000} placeholder='Max Price' />
+                <input type="text" name="maxPrice" min={0} max={10000000} placeholder='Max Price' className='max-price' />
 
                 <button>
                     <img src="..\..\images\search.png" alt="search" />
