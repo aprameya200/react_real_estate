@@ -24,28 +24,34 @@ function Card({ itemId, item }) {
                     </h1>
                 </div>
                 <div className="additional-info">
-                    <div className="bedroom center">
-                        <img src="..\..\images\bed.png" alt="bed" />
-                        <span>
-                            {item.bedroom} bedroom
 
-                        </span>
-                    </div>
-                    <div className="bathroom center">
-                        <img src="..\..\images\bath.png" alt="bath" />
+                    <div className="left">
+                        <div className="bedroom center bg-white">
+                            <img src="..\..\images\bed.png" alt="bed" />
+                            <span>
+                                {item.bedroom} bedroom
 
-                        <span>
-                            {item.bathroom} bathroom
-                        </span>
-                    </div>
-                    <div className="icon-one center">
-                        <img src="..\..\images\save.png" alt="bath" />
+                            </span>
+                        </div>
+                        <div className="bathroom center bg-white">
+                            <img src="..\..\images\bath.png" alt="bath" />
 
+                            <span>
+                                {item.bathroom} bathroom
+                            </span>
+                        </div>
                     </div>
-                    <div className="icon-two center">
-                        <img src="..\..\images\chat.png" alt="bath" />
+                    <div className="right">
+                        <div className="icon-one center border-with-radius">
+                            <img src="..\..\images\save.png" alt="bath" />
 
+                        </div>
+                        <div className="icon-two center border-with-radius">
+                            <img src="..\..\images\chat.png" alt="bath" />
+
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>

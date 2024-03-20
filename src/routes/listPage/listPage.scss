@@ -1,14 +1,20 @@
 .list-page{
     display: flex;
     flex-direction: row;
-    height: 200vh;
+    height: 100%;
 
     .list-container{
         flex: 3;
         overflow-y: auto;
 
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
         .wrapper{
             padding-right: 50px;
+            
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -18,6 +24,8 @@
     .map-container{
         flex: 2;
         background-color: #fcf5f3;
-        padding-right: 20px;
+        height: 100%;
+        width: 100%;
     }
 }
+

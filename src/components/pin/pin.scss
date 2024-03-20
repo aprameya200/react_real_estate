@@ -1,0 +1,31 @@
+
+.popup{
+    display: flex;
+    gap: 10px;
+        img{
+            height: 50px;
+            width: 100px;
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: start;
+    
+
+            p{
+                margin: 0px;
+            }
+
+            h1{
+                font-size: 10px;
+                width: 100px;
+                overflow: hidden; /* make sure it hides the content that overflows */
+                white-space: nowrap; /* don't break the line */
+                text-overflow: ellipsis;
+            }
+        }
+
+    }
+    

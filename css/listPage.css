@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 200vh;
+  height: 100%;
 }
 
 .list-page .list-container {
@@ -14,6 +14,11 @@
       -ms-flex: 3;
           flex: 3;
   overflow-y: auto;
+}
+
+.list-page .list-container ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
 .list-page .list-container .wrapper {
@@ -35,6 +40,8 @@
       -ms-flex: 2;
           flex: 2;
   background-color: #fcf5f3;
-  padding-right: 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=listPage.css.map */
