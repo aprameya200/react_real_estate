@@ -76,7 +76,6 @@ nav .left {
 }
 
 nav .right {
-  padding-right: 20px;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;

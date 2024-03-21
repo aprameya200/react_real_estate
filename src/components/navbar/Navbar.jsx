@@ -47,6 +47,9 @@ function Navbar() {
             <div className="right">
                 <a href="" className='user-item'>Sign In</a>
                 <a href="" className='yellow-btn-color user-item'>Sign Up</a>
+                <div className="spacer">
+
+                </div>
                 <div className="menu-icon">
                     <img src="..\..\images\menu.png" alt="" onClick={handleClick} />
                 </div>
